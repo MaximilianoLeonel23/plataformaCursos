@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cursos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Registrate</h2>
+        <div class="form-switch">
+          <div class="form-circle"></div>
+          <h4 class="form-switch-btn">Curso</h4>
+        </div>
+        <form class="form" id="formulario-curso">
+          <div class="form-input">
+            <label>Nombre</label>
+            <input type="text" name="nombre" required />
+          </div>
+          <div class="form-input">
+            <label>Poster</label>
+            <input type="text" name="poster" required />
+          </div>
+          <div class="form-input">
+            <label>Clases</label>
+            <input type="number" name="clases" required />
+          </div>
+          <div class="form-input">
+            <label>Titular</label>
+            <input type="text" name="titular" required />
+          </div>
+          <button type="submit" id="submit-btn" class="color-primary-btn">
+            Agrega tu curso
+          </button>
+        </form>
+        <form class="form hidden" id="formulario-usuario">
+          <div class="form-input">
+            <label>Nombre</label>
+            <input type="text" name="nombres" required />
+          </div>
+          <div class="form-input">
+            <label>Apellido</label>
+            <input type="text" name="apellido" required />
+          </div>
+          <div class="form-input">
+            <label>Correo</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-btn">
+            <button type="button" class="form-btn-alumno">
+              Alumno/a <input name="alumno" type="checkbox" />
+            </button>
+            <button type="button" class="form-btn-profesor">
+              Profesor/a <input name="profesor" type="checkbox" />
+            </button>
+          </div>
+          <button type="submit" id="submit-btn" class="color-secondary-btn">
+            Registrate
+          </button>
+        </form>
+      </div>
+
+      <div class="course-container">
+        <h2 class="course-title">Cursos</h2>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-poster">
+              <img src="https://picsum.photos/300/200" alt="" />
+            </div>
+            <div class="card-description">
+              <p class="card-title">Nombre del curso</p>
+              <span class="card-titular">Nombre del titular</span>
+              <span class="card-classes">x clases</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/switch.js"></script>
+    <!-- <script src="scripts/curso.js"></script> -->
+  </body>
+</html>

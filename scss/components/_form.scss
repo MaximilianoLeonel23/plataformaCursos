@@ -1,0 +1,122 @@
+.form-container {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: $color-white;
+
+  h2 {
+    font-weight: 800;
+    color: $color-dark-600;
+    font-size: $font-size-h2;
+  }
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  border: 1px solid $color-grey-400;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-btn {
+    color: $color-dark-500;
+    font-weight: 600;
+    font-size: $font-size-h4;
+    line-height: 0;
+  }
+}
+
+.form-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-primary-500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  button {
+    margin-top: 2rem;
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0.5rem 0;
+  input {
+    background-color: $color-white;
+    border: 1px solid $color-grey-400;
+
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+
+    &:focus {
+      background-color: $color-grey-300;
+      border: 1px solid $color-grey-500;
+      outline: none;
+    }
+  }
+  label {
+    color: $color-dark-400;
+    font-size: $font-size-p;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.form-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-weight: 400;
+  background-color: $color-white;
+
+  & button {
+    padding: 0.5rem 1.5rem;
+    background-color: $color-white;
+    border: 1px solid $color-grey-400;
+    font-family: "Sofia Sans", sans-serif;
+    margin: 1rem -1px 0rem;
+    font-size: $font-size-p;
+    color: $color-dark-400;
+  }
+  &-alumno {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    // &:hover {
+    //   background-color: $color-grey-300;
+    //   cursor: pointer;
+    // }
+    // &:focus {
+    //   background-color: $color-grey-300;
+    // }
+  }
+  &-profesor {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    // &:hover {
+    //   background-color: $color-grey-300;
+    //   cursor: pointer;
+    // }
+    // &:focus {
+    //   background-color: $color-grey-300;
+    // }
+  }
+}
+
+.hidden {
+  display: none;
+}
